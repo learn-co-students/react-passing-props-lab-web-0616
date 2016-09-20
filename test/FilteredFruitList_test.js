@@ -51,6 +51,10 @@ describe('<FilteredFruitList />', () => {
     expect(defaultProps).toIncludeKey('filter');
   });
 
+  it('should have a top-level ul element with class "fruit-list"', () => {
+    expect(wrapper.find('ul').hasClass('fruit-list')).toBeTruthy(); 
+  });
+
   it('should render entire fruit list when filter is null', () => {
     expect(wrapper.find('li').length).toBe(4, 'Failed to render full list.');
   });

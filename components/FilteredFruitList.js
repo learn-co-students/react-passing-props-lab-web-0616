@@ -9,7 +9,7 @@ const FilteredFruitList = ({
     fruit : fruit.filter(i => i.fruit_type == filter);
 
   return (
-    <ul>
+    <ul className="fruit-list">
       {fruitList.map((fruit, idx) => <li key={idx}>{fruit.char}</li>)}
     </ul>
   );

@@ -11,7 +11,7 @@ const FruitBasket = ({
   updateFilterCallback
 }) => {
   return (
-    <div>
+    <div className="fruit-basket">
       <Filter
         filters={filters}
         handleChange={updateFilterCallback} />
