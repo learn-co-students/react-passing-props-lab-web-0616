@@ -23,7 +23,7 @@ class FruitBasket extends Component {
 
   render() {
     return (
-      <div>
+      <div className="fruit-basket">
         <Filter handleChange={this.handleFilterChange} />
         <FilteredFruitList
           filter={this.state.selectedFilter} />

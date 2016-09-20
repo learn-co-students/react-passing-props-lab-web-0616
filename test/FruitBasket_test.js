@@ -40,4 +40,8 @@ describe('<FruitBasket />', () => {
     expect(FruitBasket.defaultProps).toIncludeKey('updateFilterCallback');
   });
 
+  it('should have a top-level div with class "fruit-basket"', () => {
+    expect(wrapper.find('div').hasClass('fruit-basket')).toBeTruthy();
+  });
+
 });

@@ -47,7 +47,7 @@ const getFruitTypes = () => {
 };
 
 const getFruitBasket = () => {
-  const size = getRandomInt(300, 500);
+  const size = getRandomInt(700, 1000);
   let basket = [];
   for (let i=0; i<=size; i++) {
     basket.push(Object.assign({}, getRandomFruit()))
