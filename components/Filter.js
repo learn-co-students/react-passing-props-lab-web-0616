@@ -12,5 +12,9 @@ const Filter = ({
     )}
   </select>
 );
+Filter.defaultProps = {
+  filters: [],
+  handleChange: function() {}
+};
 
 module.exports = Filter;

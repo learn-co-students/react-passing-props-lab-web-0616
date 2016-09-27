@@ -24,19 +24,15 @@ describe('<Filter />', () => {
     );
   });
 
-  // it('should have a defaultProp "filters"', () => {
-  //   expect(wrapper.defaultProps).toExist('defaultProps is not defined.');
-  //   expect(wrapper.defaultProps.filters).toExist(
-  //     'Missing defaultProp "filters".'
-  //   );
-  // });
-  //
-  // it('should have a defaultProp "handleChange"', () => {
-  //   expect(wrapper.defaultProps).toExist('defaultProps is not defined.');
-  //   expect(wrapper.defaultProps.handleChange).toExist(
-  //     'Missing defaultProp "handleChange".'
-  //   );
-  // });
+  it('should have a defaultProp "filters"', () => {
+    expect(Filter.defaultProps).toExist('defaultProps is not defined.');
+    expect(Filter.defaultProps).toIncludeKey('filters');
+  });
+
+  it('should have a defaultProp "handleChange"', () => {
+    expect(Filter.defaultProps).toExist('defaultProps is not defined.');
+    expect(Filter.defaultProps).toIncludeKey('handleChange');
+  });
 
   it('should call "handleChange" callback when there is a change', () => {
     wrapper.find('select').simulate('change');
