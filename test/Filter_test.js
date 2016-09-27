@@ -31,7 +31,7 @@ describe('<Filter />', () => {
 
   it('should have a defaultProp "handleChange"', () => {
     expect(Filter.defaultProps).toExist('defaultProps is not defined.');
-    expect(Filter.defaultProps.handleChange).toIncludeKey('handleChange');
+    expect(Filter.defaultProps).toIncludeKey('handleChange');
   });
 
   it('should call "handleChange" callback when there is a change', () => {
