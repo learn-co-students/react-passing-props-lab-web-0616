@@ -36,7 +36,7 @@ something to be desired. The application has too many components
 that are unnecessarily maintaining state. To drive this point home, take a look
 at this representation of the application's component hierarchy:
 
-```
+```javascript
 <App>
   <FruitBasket>
     <Filter />
