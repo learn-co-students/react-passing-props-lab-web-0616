@@ -1,5 +1,4 @@
 const React = require('react');
-const { Component } = require('react');
 
 const Filter = require('./Filter');
 const FilteredFruitList = require('./FilteredFruitList.js');
