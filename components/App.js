@@ -4,7 +4,7 @@ const FruitBasket = require('./FruitBasket');
 
 const App = () => {
   return (
-		<FruitBasket />
+    <FruitBasket />
   );
 }
 
