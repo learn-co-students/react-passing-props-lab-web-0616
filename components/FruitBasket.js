@@ -7,13 +7,13 @@ const FruitBasket = ({
   fruit,
   filters,
   currentFilter,
-  updateFilterCallback
+  onUpdateFilter
 }) => {
   return (
     <div className="fruit-basket">
       <Filter
         filters={filters}
-        handleChange={updateFilterCallback} />
+        handleChange={onUpdateFilter} />
       <FilteredFruitList
         fruit={fruit}
         filter={currentFilter} />
