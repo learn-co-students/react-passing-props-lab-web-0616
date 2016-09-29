@@ -28,7 +28,7 @@ truly want!
 
 Now, one thing that is a bit unusual about this lab is that rather than building
 the app from scratch, we will instead work with an application that has already
-been built. If you run `npm run budle` and then load the `index.html` file,
+been built. If you run `npm run bundle` and then load the `index.html` file,
 you'll see the product in all its glory.
 
 Although this app is already working, its original implementation frankly leaves
@@ -36,7 +36,7 @@ something to be desired. The application has too many components
 that are unnecessarily maintaining state. To drive this point home, take a look
 at this representation of the application's component hierarchy:
 
-```
+```javascript
 <App>
   <FruitBasket>
     <Filter />
