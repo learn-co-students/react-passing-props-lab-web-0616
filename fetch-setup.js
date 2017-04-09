@@ -1,8 +1,8 @@
 require('whatwg-fetch');
-const fetchMock = require('fetch-mock');
-const { getFruitTypes, getFruitBasket } = require('./fruit');
+import fetchMock from 'fetch-mock';
+import { getFruitTypes, getFruitBasket } from './fruit';
 
 fetchMock.get('/api/fruit', getFruitBasket());
 fetchMock.get('/api/fruit_types', getFruitTypes());
 
-module.exports = fetchMock;
+export default fetchMock;

@@ -1,8 +1,8 @@
-const React = require('react');
-const { Component } = require('react');
+import React from 'react';
+import { Component } from 'react';
 
-const Filter = require('./Filter');
-const FilteredFruitList = require('./FilteredFruitList.js');
+import Filter from './Filter';
+import FilteredFruitList from './FilteredFruitList.js';
 
 class FruitBasket extends Component {
   constructor() {
@@ -32,4 +32,4 @@ class FruitBasket extends Component {
   }
 }
 
-module.exports = FruitBasket;
+export default FruitBasket;

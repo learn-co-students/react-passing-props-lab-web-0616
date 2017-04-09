@@ -1,9 +1,9 @@
-const React = require('react');
-const { shallow } = require('enzyme');
-const sinon = require('sinon');
+import React from 'react';
+import { shallow } from 'enzyme';
+import sinon from 'sinon';
 
 const Noop = () => (<p>Noop</p>);
-const Filter = require('../components/Filter');
+import Filter from '../components/Filter';
 
 const filters = [ 'filter1', 'filter2', 'filter3' ];
 

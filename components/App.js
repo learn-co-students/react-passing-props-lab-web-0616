@@ -1,6 +1,6 @@
-const React = require('react');
+import React from 'react';
 
-const FruitBasket = require('./FruitBasket');
+import FruitBasket from './FruitBasket';
 
 const App = () => {
   return (
@@ -8,4 +8,4 @@ const App = () => {
   );
 }
 
-module.exports = App;
+export default App;

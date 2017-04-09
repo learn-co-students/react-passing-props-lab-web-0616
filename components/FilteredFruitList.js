@@ -1,5 +1,5 @@
-const React = require('react');
-const { Component } = require('react');
+import React from 'react';
+import { Component } from 'react';
 
 class FilteredFruitList extends Component {
   constructor(props) {
@@ -28,5 +28,4 @@ class FilteredFruitList extends Component {
   }
 }
 
-module.exports = FilteredFruitList;
-
+export default FilteredFruitList;

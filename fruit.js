@@ -1,5 +1,5 @@
-const _ = require('lodash');
-const emoji = require('emojilib');
+import _ from 'lodash';
+import emoji from 'emojilib';
 
 const fruitTypes = ['berry', 'pepo', 'pome', 'citrus', 'drupe', 'other'];
 
@@ -55,4 +55,4 @@ const getFruitBasket = () => {
   return basket;
 }
 
-module.exports = { getFruitBasket, getFruitTypes };
+export { getFruitBasket, getFruitTypes };
