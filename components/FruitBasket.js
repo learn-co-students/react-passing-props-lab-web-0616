@@ -1,7 +1,7 @@
-const React = require('react');
+import React from 'react';
 
-const Filter = require('./Filter');
-const FilteredFruitList = require('./FilteredFruitList.js');
+import Filter from './Filter';
+import FilteredFruitList from './FilteredFruitList.js';
 
 const FruitBasket = ({
   fruit,
@@ -28,4 +28,4 @@ FruitBasket.defaultProps = {
   updateFilterCallback: () => {}
 };
 
-module.exports = FruitBasket;
+export default FruitBasket;

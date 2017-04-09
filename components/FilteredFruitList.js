@@ -1,4 +1,4 @@
-const React = require('react');
+import React from 'react';
 
 const FilteredFruitList = ({
   fruit,
@@ -17,5 +17,4 @@ FilteredFruitList.defaultProps = {
   filter: null
 };
 
-module.exports = FilteredFruitList;
-
+export default FilteredFruitList;

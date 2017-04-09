@@ -1,7 +1,7 @@
-const React = require('react');
-const { Component } = require('react');
+import React from 'react';
+import { Component } from 'react';
 
-const FruitBasket = require('./FruitBasket');
+import FruitBasket from './FruitBasket';
 
 class App extends Component {
   constructor() {
@@ -50,4 +50,4 @@ class App extends Component {
   }
 }
 
-module.exports = App;
+export default App;

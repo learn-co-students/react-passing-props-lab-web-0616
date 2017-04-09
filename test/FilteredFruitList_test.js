@@ -1,8 +1,8 @@
-const React = require('react');
-const { shallow } = require('enzyme');
+import React from 'react';
+import { shallow } from 'enzyme';
 
 const Noop = () => (<p>Noop</p>);
-const FilteredFruitList = require('../components/FilteredFruitList');
+import FilteredFruitList from '../components/FilteredFruitList';
 
 const fruit = [
   { name: 'grapes',
@@ -52,7 +52,7 @@ describe('<FilteredFruitList />', () => {
   });
 
   it('should have a top-level ul element with class "fruit-list"', () => {
-    expect(wrapper.find('ul').hasClass('fruit-list')).toBeTruthy(); 
+    expect(wrapper.find('ul').hasClass('fruit-list')).toBeTruthy();
   });
 
   it('should render entire fruit list when filter is null', () => {

@@ -1,4 +1,4 @@
-const React = require('react');
+import React from 'react';
 
 const Filter = ({
   filters,
@@ -16,4 +16,4 @@ Filter.defaultProps = {
   handleChange: function() {}
 };
 
-module.exports = Filter;
+export default Filter;

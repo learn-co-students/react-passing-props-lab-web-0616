@@ -1,8 +1,8 @@
-const React = require('react');
-const { shallow } = require('enzyme');
+import React from 'react';
+import { shallow } from 'enzyme';
 
 const Noop = () => (<p>Noop</p>);
-const FruitBasket = require('../components/FruitBasket');
+import FruitBasket from '../components/FruitBasket';
 
 describe('<FruitBasket />', () => {
   let wrapper;
