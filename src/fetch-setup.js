@@ -1,4 +1,4 @@
-require('whatwg-fetch');
+import 'isomorphic-fetch';
 import fetchMock from 'fetch-mock';
 import { getFruitTypes, getFruitBasket } from './fruit';
 

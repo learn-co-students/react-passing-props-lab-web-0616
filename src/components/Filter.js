@@ -1,5 +1,4 @@
-import React from 'react';
-import { Component } from 'react';
+import React, { Component } from 'react';
 
 class Filter extends Component {
   constructor() {
@@ -8,18 +7,16 @@ class Filter extends Component {
     this.state = {
       filters: []
     };
-
-    this.fetchFilters = this.fetchFilters.bind(this);
   }
 
   componentWillMount() {
     this.fetchFilters();
   }
 
-  fetchFilters() {
+  fetchFilters = () => {
     fetch('/api/fruit_types')
-      .then(res => res.json())
-      .then(filters => this.setState({filters: filters}));
+      .then(response => response.json())
+      .then(filters => this.setState({ filters }));
   }
 
   render() {
