@@ -1,5 +1,4 @@
-import React from 'react';
-import { Component } from 'react';
+import React, { Component }  from 'react';
 
 import Filter from './Filter';
 import FilteredFruitList from './FilteredFruitList.js';
@@ -12,13 +11,11 @@ class FruitBasket extends Component {
       filters: [],
       selectedFilter: null
     };
-
-    this.handleFilterChange = this.handleFilterChange.bind(this);
   }
 
-  handleFilterChange(e) {
-    console.log('new filter: ', e.target.value);
-    this.setState({ selectedFilter: e.target.value });
+  handleFilterChange = event => {
+    console.log('new filter: ', event.target.value);
+    this.setState({ selectedFilter: event.target.value });
   }
 
   render() {
