@@ -1,8 +1,12 @@
 import React from'react';
+import { expect } from 'chai';
 import { shallow } from'enzyme';
 
+import '../src/fetch-setup';
+import App from'../src/components/App';
+
+
 const Noop = () => (<p>Noop</p>);
-import App from'../components/App';
 
 describe('<App />', () => {
   let wrapper;
@@ -14,20 +18,19 @@ describe('<App />', () => {
 
   it('should be a class component with state', () => {
     const tryToGetState = () => { wrapper.state(); }
-    expect(tryToGetState).toNotThrow(undefined,
+    expect(tryToGetState).to.not.throw(undefined,
       'Component should be class-based.');
   });
 
   it('should have a state property "fruit" initiated to empty array', () => {
-    expect(wrapper.state().fruit).toEqual([]);
+    expect(wrapper.state().fruit).to.deep.equal([]);
   });
 
   it('should have a state property "filters" initiated to empty array', () => {
-    expect(wrapper.state().filters).toEqual([]);
+    expect(wrapper.state().filters).to.deep.equal([]);
   });
 
   it('should have a state property "currentFilter" iniated to null', () => {
-    expect(wrapper.state().currentFilter).toEqual(null);
+    expect(wrapper.state().currentFilter).to.deep.equal(null);
   });
-
 });
