@@ -1,9 +1,12 @@
 import React from 'react';
 import { expect } from 'chai';
-import { shallow } from 'enzyme';
+import Enzyme, { shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 
 import '../src/fetch-setup';
 import FilteredFruitList from '../src/components/FilteredFruitList';
+
+Enzyme.configure({ adapter: new Adapter() })
 
 const Noop = () => (<p>Noop</p>);
 const fruit = [
