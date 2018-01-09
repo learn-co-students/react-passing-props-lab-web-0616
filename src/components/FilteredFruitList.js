@@ -9,7 +9,7 @@ class FilteredFruitList extends Component {
     };
   }
 
-  componentWillMount() {
+  componentDidMount() {
     fetch('/api/fruit')
       .then(response => response.json())
       .then(items => this.setState({ items }));
